@@ -1,0 +1,7 @@
+<mat-card fxLayout="row">
+  <mat-card-header fxFlex>
+    <mat-card-title>{{task.name}}</mat-card-title>
+    <mat-card-subtitle>{{getFormattedDate(task.creationDate)}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-checkbox matInput [value]="task.isCompleted"></mat-checkbox>
+</mat-card>

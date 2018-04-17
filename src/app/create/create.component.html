@@ -1,0 +1,9 @@
+<mat-card>
+  <form fxLayout="column">
+    <mat-form-field>
+      <input matInput placeholder="Task name" [(ngModel)]="name" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+  </form>
+
+  <button mat-fab (click)="addTask()"><mat-icon>add</mat-icon></button>
+</mat-card>
